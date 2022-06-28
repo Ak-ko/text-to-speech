@@ -1,0 +1,74 @@
+html{
+    box-sizing:border-box;
+    min-height:100vh;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+
+    
+    background:url('./tom.gif');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:left center;
+
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+button {
+    background:transparent;
+    border:none;
+    outline:none;
+
+    font-size:1.4rem;
+    background-color:white;
+
+    padding:10px 20px;
+    margin-top:150px;
+    margin-left:20px;
+
+    text-transform:uppercase;
+    letter-spacing:0.3rem;
+
+    border-radius:2.5rem;
+
+    box-shadow:0 0.3rem rgba(0, 0, 0, 0.4);
+
+    cursor:pointer;
+}
+
+
+button:hover {
+    filter:brightness(90%);
+}
+
+button:active{
+    transform:scale(0.98);
+}
+
+/* Media Query: For Tablet and smaller */
+@media screen and (max-width:1000px) {
+    .container {
+        background-size:cover;
+        background-position:top center;
+    }
+
+    button {
+        margin-top:400px;
+    }
+
+    button, audio {
+        margin-left:30px;
+    }
+}
+
